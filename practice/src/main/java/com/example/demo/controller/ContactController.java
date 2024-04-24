@@ -12,8 +12,7 @@ public class ContactController {
 	
 	@PostMapping("/contact")
 	public ModelAndView contact(
-			@ModelAttribute ContactData 
-			contactData, ModelAndView mv) {
+			@ModelAttribute ContactData contactData, ModelAndView mv) {
 		
 			mv.setViewName("confirmation");
 		    mv.addObject("lastName", contactData.getLastName());
